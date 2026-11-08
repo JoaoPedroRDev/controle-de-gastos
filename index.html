@@ -8,9 +8,43 @@
   </head>
 
   <body>
-    <h1>Seu Controlador de Gastos Pessoais</h1>
-    <h2>Controle seus gastos do dia a dia por aqui, simples e prático!</h2>
-    <p>Controle do seu JEITO!</p>
+    <header>
+      <h1>Seu Controlador de Gastos Pessoais</h1>
+      <p>Controle seus gastos do dia a dia por aqui, simples e prático!</p>
+      <p>Controle do seu JEITO!</p>
+    </header>
+
+    <section id="novo-gasto">
+      <h2>Novo Gasto</h2>
+      <form id="formulario">
+        <div>
+          <label for="nome">Dê um nome pro gasto:</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+
+        <div>
+          <label for="descricao">Faça uma breve descrição (Opcional)</label>
+          <textarea name="descricao" id="descricao"></textarea>
+        </div>
+
+        <div>
+          <label for="data">Digite a data</label>
+          <input type="date" name="data" id="data" required />
+        </div>
+
+        <div>
+          <label for="valor">Quanto está gastando:</label>
+          <input name="valor" id="valor" type="number" required step="0.01" />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="lista">
+      <h2>Lista dos gastos</h2>
+      <ul id="listagem"></ul>
+      <p>Total gasto: R$ <span id="total"></span></p>
+    </section>
 
     <script src="script.js"></script>
   </body>
