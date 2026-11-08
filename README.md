@@ -34,4 +34,4 @@ HTML, CSS e JavaScript (sem frameworks)
 
 ## Status
 
-Em desenvolvimento
+Em desenvolvimento!
