@@ -8,3 +8,5 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   console.log(Number(valor.value));
 });
+
+// arrays
