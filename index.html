@@ -34,7 +34,14 @@
 
         <div>
           <label for="valor">Quanto está gastando:</label>
-          <input name="valor" id="valor" type="number" required step="0.01" />
+          <input
+            name="valor"
+            id="valor"
+            type="number"
+            required
+            step="0.01"
+            min="0.10"
+          />
         </div>
         <button type="submit">Enviar</button>
       </form>
